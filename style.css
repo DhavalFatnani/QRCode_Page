@@ -35,6 +35,16 @@ body {
   gap: 16px;
 }
 
+.card .qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .qr img {
+  border-radius: 10px;
+}
+
 .card .content {
   width: 288px;
   padding: 0 10px 0 10px;
@@ -47,16 +57,22 @@ body {
 
 .card .content .bold-content {
   font-family: "Outfit", sans-serif;
-  padding: 0 15px;
-  font-size: 18px;
+  padding: 0 5px;
+  font-size: 22px;
   font-weight: 700;
   text-align: center;
 }
 
 .card .content .normal-content {
   font-family: "Outfit", sans-serif;
-  padding: 0 5px;
+  padding: 0 15px;
   text-align: center;
   font-size: 15px;
   font-weight: 400px;
+  color: gray;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+  }
 }
